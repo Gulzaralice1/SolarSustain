@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar Energy for Sustainable Development</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
 
     @media (max-width: 576px) { /* For mobile */
@@ -435,6 +437,55 @@
         </div>
     </section>
     
+
+    <div class="container mt-5">
+        <h2 class="text-center">Solar Energy Production Over Time</h2>
+        <div class="car">
+            <div class="card-body">
+                <h5 class="card-title">Solar Energy (in MW)</h5>
+                <canvas id="solarEnergyChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('solarEnergyChart').getContext('2d');
+        const solarEnergyChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Solar Energy Production (MW)',
+                    data: [200, 300, 500, 700, 1000, 1300, 1600],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Energy Production (MW)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Footer -->
     <footer class="text-white mt-5 py-4" id="Contact">
         <div class="container">
