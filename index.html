@@ -11,6 +11,16 @@
         .heding {
             font-size: 20px !important; /* Adjust size as needed */
         }
+        .card-text{
+            font-size: 15px;
+        }
+
+        .card-title{
+            font-size: medium;
+        }
+    }
+    .heding {
+        background-color: rgb(225 230 235 / 70%); text-shadow: none;
     }
         /* Color Variables */
         :root {
@@ -116,6 +126,33 @@
             background-color: var(--text-color);
             color: var(--background-color);
         }
+
+
+        .card {
+        background: linear-gradient(45deg, #ffcc33, #e6cdc8, #33ffcc, #aac1e2);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+        border: none; /* Optional: removes card border */
+        transition: transform 0.3s ease; /* Adds a slight zoom effect on hover */
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Keyframes for the gradient animation */
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+        
     </style>
 </head>
 <body>
@@ -129,9 +166,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Advantages">Advantages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Benefits">Benefits</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -173,90 +211,236 @@
     </section>
 
     <!-- Topic Section -->
-    <section class="topic-section container my-5 text-start ">
+    <section class="topic-section container my-5 text-start">
         <div class="overlay"></div>
         <h2 class="topic-heading heding">Solar Energy for Sustainable Development</h2>
-        <p class="text-dark text-start">Solar energy comes from the sun, making it a powerful and renewable resource that is becoming more popular worldwide. With the urgent issues of climate change, limited resources, and the need for secure energy sources, sustainable development has never been more critical. Sustainable development aims to meet our needs today while ensuring that future generations can meet theirs, and solar energy plays a significant role in achieving this goal.
+        
+        <p class="text-dark">
+            Solar energy comes from the sun, making it a powerful and renewable resource that is becoming more popular worldwide. With the urgent issues of climate change, limited resources, and the need for secure energy sources, sustainable development has never been more critical. Sustainable development aims to meet our needs today while ensuring that future generations can meet theirs, and solar energy plays a significant role in achieving this goal.
+        </p>
+        <p class="text-dark">
             By using solar energy, we convert sunlight into electricity or heat. This is usually done through solar panels or solar thermal systems. Unlike fossil fuels, which pollute and harm the environment, solar energy is clean, natural, and nearly endless. As countries adopt greener energy solutions, solar technology helps in reducing climate change effects, boosting economic growth, creating jobs, and improving energy independence.
+        </p>
+        <p class="text-dark">
             This report will explore the numerous benefits of solar energy in promoting sustainable development. We will also discuss the challenges that prevent its wider use and examine creative solutions and success stories that show how solar energy can build a better future.
         </p>
-        <p class="text-dark mt-5">
-            <h4 class="text-dark" style="font-weight: bold;">Understanding Sustainable Development</h4>
-            <p class="text-dark">Sustainable development is about balancing our present needs with those of future generations. It has three main pillars:</p>
+    
+        <h4 class="text-dark mt-5 fw-bold">Understanding Sustainable Development</h4>
+        <p class="text-dark">
+            Sustainable development is about balancing our present needs with those of future generations. It has three main pillars:
         </p>
-
-        <ol class="text-dark mt-3">
-            <li class="mt-3"><span class="text-dark" style="font-weight: bold;">Economic Growth:</span> Economic growth aims to improve living standards, create jobs, and foster innovation. But to be sustainable, it must consider long-term effects and avoid using up resources</li>
-            <li class="mt-3"><span class="text-dark" style="font-weight: bold;">Environmental Protection:</span> This pillar focuses on reducing pollution, conserving natural resources, and protecting ecosystems. The goal is to keep our planet healthy so it can support life and provide resources in the future.</li>
-            <li class="mt-3 mb-3"><span class="text-dark" style="font-weight: bold;">Social Equality:</span> This pillar promotes equal access to essential services like education, healthcare, and fair job opportunities. It also works to reduce inequalities, ensuring all communities have the chance to prosper.</li>
+    
+        <ul class="text-dark mt-3">
+            <li class="mt-3">
+                <span class="text-dark fw-bold">Economic Growth:</span> 
+                Economic growth aims to improve living standards, create jobs, and foster innovation. But to be sustainable, it must consider long-term effects and avoid using up resources.
+            </li>
+            <li class="mt-3">
+                <span class="text-dark fw-bold">Environmental Protection:</span> 
+                This pillar focuses on reducing pollution, conserving natural resources, and protecting ecosystems. The goal is to keep our planet healthy so it can support life and provide resources in the future.
+            </li>
+            <li class="mt-3 mb-3">
+                <span class="text-dark fw-bold">Social Equality:</span> 
+                This pillar promotes equal access to essential services like education, healthcare, and fair job opportunities. It also works to reduce inequalities, ensuring all communities have the chance to prosper.
+            </li>
+        </ul>
+    
+        <p class="text-dark">
             In summary, sustainable development requires a careful approach that balances economic growth with environmental care and social fairness, creating a world where both current and future generations can thrive.
-        </ol>
-        <h4 class="text-dark mt-5" style="font-weight: bold;">The Goal of This Reportt</h4>
-         <p class="mt-3 text-dark">The primary goal of this report is to highlight the role of energy in driving development across the environment, economy, and society. By using energy that reduces greenhouse gas 
-         emissions and promotes accessibility, we can build a resilient and sustainable future. 
-         This report will look at the benefits and obstacles to adopting solar energy, 
-         including challenges with policies and infrastructure. Real-life examples from different 
-         parts of the world will show how energy can create meaningful changes for a better society and a healthier environment.</p>
-    </section>
-    <section class="topic-section container my-5">
-        <div class="overlay"></div>
-        <h2 class="topic-heading heding">Solar Energy for Sustainable Development</h2>
-        <p class="text-dark">Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Decreased reliance on fossil fuels: By harnessing solar power, countries can reduce their dependence on fossil 
-            fuels such as coal, oil, and natural gas. This not only conserves these valuable resources but also mitigates 
-            the environmental and social impacts associated with their extraction and combustion.
+        </p>
+    
+        <h4 class="text-dark mt-5 fw-bold">The Goal of This Report</h4>
+        <p class="text-dark mt-3">
+            The primary goal of this report is to highlight the role of energy in driving development across the environment, economy, and society. By using energy that reduces greenhouse gas emissions and promotes accessibility, we can build a resilient and sustainable future. This report will look at the benefits and obstacles to adopting solar energy, including challenges with policies and infrastructure. Real-life examples from different parts of the world will show how energy can create meaningful changes for a better society and a healthier environment.
         </p>
     </section>
-    <section class="topic-section container my-5">
-        <div class="overlay"></div>
-        <h2 class="topic-heading heding">Solar Energy for Sustainable Development</h2>
-        <p class="text-dark">Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Decreased reliance on fossil fuels: By harnessing solar power, countries can reduce their dependence on fossil 
-            fuels such as coal, oil, and natural gas. This not only conserves these valuable resources but also mitigates 
-            the environmental and social impacts associated with their extraction and combustion.
-        </p>
-    </section>
-    <section class="topic-section container my-5">
-        <div class="overlay"></div>
-        <h2 class="topic-heading heding">Solar Energy for Sustainable Development</h2>
-        <p class="text-dark">Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Decreased reliance on fossil fuels: By harnessing solar power, countries can reduce their dependence on fossil 
-            fuels such as coal, oil, and natural gas. This not only conserves these valuable resources but also mitigates 
-            the environmental and social impacts associated with their extraction and combustion.
-        </p>
-    </section>
-    <section class="topic-section container my-5">
-        <div class="overlay"></div>
-        <h2 class="topic-heading">Solar Energy for Sustainable Development</h2>
-        <p class="text-dark">Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Solar energy is one of the most promising solutions to achieve sustainable development goals...
-            Decreased reliance on fossil fuels: By harnessing solar power, countries can reduce their dependence on fossil 
-            fuels such as coal, oil, and natural gas. This not only conserves these valuable resources but also mitigates 
-            the environmental and social impacts associated with their extraction and combustion.
-        </p>
-    </section>
-s
 
+
+    <!-- section 2 -->
+    <section class="advantages-section container my-5 text-start shadow p-4" id="Advantages">
+        <div class="overlay"></div>
+        <h2 class="topic-heading heding" style="background-color: rgb(225 230 235 / 70%); text-shadow: none;">Advantages of Solar Energy</h2>
+        
+        <p class="text-dark">
+            Solar energy offers numerous benefits, making it a powerful option for a more sustainable and eco-friendly future. Below are some of the key advantages:
+        </p>
+    
+        <ul class="text-dark mt-4">
+            <li class="mt-3">
+                <span class="fw-bold">Renewable Source:</span> Solar energy relies on sunlight, a resource that is naturally abundant and will never be exhausted as long as the sun exists, making it a reliable choice for sustainable energy.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Minimal Environmental Impact:</span> Solar power generation releases little to no greenhouse gases or pollutants, helping to fight climate change and significantly reduce air pollution.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Lower Electricity Costs:</span> Installing solar panels allows you to generate your own electricity, which can greatly reduce energy bills, leading to long-term financial savings.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Energy Independence:</span> Utilizing solar energy decreases reliance on traditional power grids and fossil fuels, enhancing energy security and stability.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Low Maintenance Costs:</span> Solar panels require minimal maintenance and can last for decades, making them a cost-effective energy solution.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Technological Advancements:</span> Innovations in solar technology have led to greater efficiency and affordability, making solar power accessible to a wider audience.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Job Creation:</span> The expanding solar industry has generated numerous employment opportunities in manufacturing, installation, research, and maintenance.
+            </li>
+            <li class="mt-3">
+                <span class="fw-bold">Versatile Applications:</span> Solar energy can be used for various purposes, from generating electricity and heating water to powering remote locations and space technology.
+            </li>
+            <li class="mt-3 mb-3">
+                <span class="fw-bold">Increased Property Value:</span> Homes and properties with solar installations often see a rise in market value, making them more appealing to potential buyers.
+            </li>
+        </ul>
+    </section>
+
+           
+    <!-- section 3 -->
+    <section class="sustainability-section container my-5 text-start shadow p-4" id="Benefits">
+        <div class="overlay"></div>
+        <h2 class="topic-heading heding " style="background-color: rgb(225 230 235 / 70%); text-shadow: none;">The Benefits of Solar Energy for a Sustainable Future</h2>
+    
+        <p class="text-dark">
+            Solar energy plays a crucial role in achieving sustainable development through various dimensions:
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Environmental Sustainability</h4>
+        <p class="text-dark">
+            Solar energy is essential for reducing carbon emissions and cutting down air pollution, which helps protect our environment. By switching from fossil fuels to solar power, we can significantly lower our carbon footprint and address climate change.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Economic Growth</h4>
+        <p class="text-dark">
+            The solar industry creates jobs across various sectors, including manufacturing, installation, and maintenance. This not only drives economic growth but also supports a green economy. Additionally, solar energy can lead to lower electricity costs, providing financial savings for individuals and businesses.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Social Equity</h4>
+        <p class="text-dark">
+            Access to clean and affordable energy is vital for social equity. Solar energy can supply reliable power to remote and underserved communities, improving quality of life and contributing to social progress.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Resource Conservation</h4>
+        <p class="text-dark">
+            Solar energy is a never-ending resource. Using it reduces our dependence on limited fossil fuels, conserves natural resources for future generations, and ensures long-term energy security.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Innovation and Technological Advancement</h4>
+        <p class="text-dark">
+            Developing solar technology promotes innovation in science and engineering. These advancements make solar energy more efficient and accessible, driving sustainable development.
+        </p>
+    
+        <p class="text-dark mt-4">
+            In summary, solar energy supports sustainable development by promoting environmental protection, economic growth, social inclusion, resource conservation, and technological innovation.
+        </p>
+    </section>    
+
+<!-- sectio 4 -->
     <!-- Benefits Section -->
     <section id="benefits" class="container my-5">
         <h2 class="text-center mb-4">Benefits of Solar Energy</h2>
         <div class="row">
-            <div class="col-md-4"><div class="card"><img src="image/file.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title">Clean & Renewable</h5><p class="card-text">Solar energy reduces reliance on fossil fuels...</p></div></div></div>
-            <div class="col-md-4"><div class="card"><img src="image/32.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title">Clean & Renewable</h5><p class="card-text">Solar energy reduces reliance on fossil fuels...</p></div></div></div>
-            <div class="col-md-4"><div class="card"><img src="image/31.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title">Clean & Renewable</h5><p class="card-text">Solar energy reduces reliance on fossil fuels...</p></div></div></div>
+            <div class="col-md-4 col-6 "><div class="card"><img src="image/file.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title text-dark fw-bold">House with solar panels on the roof:</h5><p class="card-text">Depicts a residential setup with solar panels, emphasizing home-based solar energy solutions.</p></div></div></div>
+            <div class="col-md-4 col-6"><div class="card"><img src="image/32.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title text-dark fw-bold">Solar farm with wind turbines</h5><p class="card-text">hows a large-scale solar farm with multiple solar panels alongside wind turbines, indicating renewable.</p></div></div></div>
+            <div class="col-md-4 col-6"><div class="card"><img src="image/31.jpg" class="card-img-top" alt="Clean Energy"><div class="card-body"><h5 class="card-title text-dark fw-bold">Workers installing solar panels</h5><p class="card-text">Highlights a hands-on installation process, focusing on the human effort involved.</p></div></div></div>
             <!-- Additional Cards here -->
         </div>
     </section>
 
+
+    <!-- section 5 -->
+    <section class="sustainability-section container my-5 text-start shadow p-4" id="Benefits" style="background-color: #dbebd6;">
+        <div class="overlay"></div>
+        <h2 class="topic-heading heding text-dark fw-bold" style="background-color: rgba(146, 141, 197, 0.7); text-shadow: none;">The Benefits of Solar Energy for a Sustainable Future</h2>
+    
+        <p class="text-dark">
+            Solar energy plays a crucial role in achieving sustainable development through various dimensions:
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Sustainable Development Goal 7: Affordable and Clean Energy</h4>
+        <p class="text-dark">
+            Solar energy supports SDG 7 by providing universal access to clean, affordable energy, especially in remote areas lacking traditional grids. The decreasing cost of solar technology has made it an affordable option for individuals and businesses, reducing energy costs while promoting environmental sustainability.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Environmental Sustainability</h4>
+        <p class="text-dark">
+            Solar energy is essential for reducing carbon emissions and cutting down air pollution, which helps protect our environment. By switching from fossil fuels to solar power, we can significantly lower our carbon footprint and address climate change, aligning with SDG 13 (Climate Action).
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Economic Growth and Jobs</h4>
+        <p class="text-dark">
+            The solar industry creates jobs across various sectors, including manufacturing, installation, and maintenance, supporting SDG 8 (Decent Work and Economic Growth). This not only drives economic growth but also supports a green economy. Additionally, solar energy can lead to lower electricity costs, providing financial savings for individuals and businesses.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Social Equity</h4>
+        <p class="text-dark">
+            Access to clean and affordable energy is vital for social equity. Solar energy can supply reliable power to remote and underserved communities, improving quality of life and contributing to social progress.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Resource Conservation</h4>
+        <p class="text-dark">
+            Solar energy is a never-ending resource. Using it reduces our dependence on limited fossil fuels, conserves natural resources for future generations, and ensures long-term energy security.
+        </p>
+    
+        <h4 class="text-dark mt-4 fw-bold">Innovation and Technological Advancement</h4>
+        <p class="text-dark">
+            Developing solar technology promotes innovation in science and engineering. These advancements make solar energy more efficient and accessible, driving sustainable development.
+        </p>
+    
+        <p class="text-dark mt-4">
+            In summary, solar energy supports sustainable development by promoting environmental protection, economic growth, social inclusion, resource conservation, and technological innovation.
+        </p>
+    </section>
+    
+
+
+
+
+    
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="image/avtar1.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member 1" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulzar Alice</h5>
+                        <!-- <p class="card-text">Software Engineer</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="image/avatr2" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member 2" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aditiya kumar</h5>
+                        <!-- <p class="card-text">UI/UX Designer</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <img src="image/avar3.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member 3" style="width: 150px; height: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sundram</h5>
+                        <!-- <p class="card-text">Project Manager</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Footer -->
-    <footer class="text-white mt-5 py-4">
+    <footer class="text-white mt-5 py-4" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center mb-3"><h5>About Us</h5><p>We promote sustainable energy solutions...</p></div>
-                <div class="col-md-4 text-center mb-3"><h5>Contact</h5><p>Email: info@solarsustain.com</p><p>Phone: +123-456-7890</p></div>
+                <div class="col-md-4 text-center mb-3"><h5>Contact</h5><p>Email: mdgulzar.tech@gmail.com</p><p>Phone: +123-456-7890</p></div>
                 <div class="col-md-4 text-center mb-3"><h5>Follow Us</h5><a href="#" class="text-white me-2">Facebook</a><a href="#" class="text-white">Twitter</a></div>
             </div>
         </div>
